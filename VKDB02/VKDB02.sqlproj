@@ -23,6 +23,7 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <DefaultSchema>vk</DefaultSchema>
+    <IncludeSchemaNameInFileName>True</IncludeSchemaNameInFileName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -79,5 +80,6 @@
     <Build Include="Security\vk.sql" />
     <Build Include="Security\Permissions.sql" />
     <Build Include="vk\Tables\vk.Process.sql" />
+    <Build Include="vk\Tables\vk.ProcessState.sql" />
   </ItemGroup>
 </Project>

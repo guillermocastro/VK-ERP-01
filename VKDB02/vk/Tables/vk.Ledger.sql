@@ -10,6 +10,6 @@
     [PartnerId]       INT             NULL,
     [TransactionType] INT             NULL,
     PRIMARY KEY CLUSTERED ([LedgerId] ASC),
-    FOREIGN KEY ([CoaId]) REFERENCES [vk].[COA] ([CoaId])
+    CONSTRAINT [FK.Ledger.COA] FOREIGN KEY ([CoaId]) REFERENCES [vk].[COA] ([CoaId])
 );
 
